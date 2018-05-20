@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testDIRECTsoft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="top_menu">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="#">testDIRECTsoft</a>
+
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="login_form pull-right">
+                            <form class="hidden-xs form-inline" method="post" action="/cgi-bin/auth.cgi" name="auth" onsubmit="return auth_form();" role="form">
+                                <div class="form-group">
+                                    <label class="label_hide">Логин</label>
+                                    <input type="text" class="form-control" name="login" placeholder="Ваш логин " value="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label_hide">Пароль</label>
+                                    <input class="form-control" type="password" name="password" placeholder="Ваш пароль" id="inputPassword" >
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="remember"> Запомнить				</label>
+                                    </div>
+                                    <a href="/pass.php">Забыли пароль?</a>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Войти</button>
+
+                                <span class="social_top hidden-sm">
+                                    <div class="inner_auth">
+                                        <a href="https://oauth.vk.com/authorize?client_id=5105046&scope=notify%2Cemail%2Cfriends%2Cphotos%2Coffline&redirect_uri=http%3A%2F%2Fwww.ipweb.ru%2Flogin.php%3Ftype%3Dvk&response_type=code">
+                                            <img width="32" height="32" class="" src="/img/auth_social/svg/vk.svg" alt="VK" title="Войти через ВКонтакте">
+                                         </a>
+                                        <a href="https://www.facebook.com/v2.8/dialog/oauth?client_id=1789024501359789&redirect_uri=http%3A%2F%2Fwww.ip-wb.ru%2Flogin_fb.php&response_type=code&scope=email%2Cuser_birthday%2Cuser_friends%2Cpublic_profile%2Cuser_likes%2Cuser_posts&auth_type=rerequest">
+                                            <img width="32" height="32" class="" src="/img/auth_social/svg/fb.svg" alt="FB" title="Войти через Facebook">
+                                        </a>
+                                        <a href="https://accounts.google.com/o/oauth2/auth?redirect_uri=https%3A%2F%2Fwww.ipweb.ru%2Flogin.php%3Ftype%3Dgoogle&response_type=code&access_type=offline&prompt=consent&client_id=22998973473-ekakio77slfa2vd92vjjqgbodtegie4o.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuser.emails.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuser.phonenumbers.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.stream.write+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.circles.read+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.force-ssl+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutubepartner+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutubepartner-channel-audit">
+                                            <img width="32" height="32" class="" src="/img/auth_social/svg/google-true.svg" alt="Google" title="Войти через Google">
+                                        </a>
+                                        <a href="https://connect.ok.ru/oauth/authorize?client_id=1248721920&response_type=code&scope=VALUABLE_ACCESS%3BPHOTO_CONTENT%3BGROUP_CONTENT%3BGET_EMAIL%3BLONG_ACCESS_TOKEN&redirect_uri=http%3A%2F%2Fwww.ipweb.ru%2Flogin.php%3Ftype%3Dodnoklassniki">
+                                            <img width="32" height="32" class="" src="/img/auth_social/svg/ok.svg" alt="OK" title="Войти через Одноклассники">
+                                        </a>
+                                        <a href="https://login.wmtransfer.com/gatekeeper.aspx?RID=0a5c3c86-1e9f-4750-b6f8-a78400e51e4e">
+                                            <img width="32" height="32" class="" src="/img/auth_social/svg/wm.svg" alt="WM" title="Войти через WebMoney">
+                                        </a>
+                                        <a href="javascript:void(0);" class="show_add_auth">
+                                            <i class="fa fa-fw fa-ellipsis-h" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="add_auth hidden">
+                                            <a href="https://api.instagram.com/oauth/authorize?redirect_uri=http%3A%2F%2Fwww.ipweb.ru%2Flogin.php%3Ftype%3Dinstagram&response_type=code&client_id=47fb16e4eee941a886d3a9cf3b601f4a&scope=basic+public_content+follower_list+likes">
+                                                <img width="32" height="32" class="" src="/img/auth_social/svg/instagram.svg" alt="Instagram" title="Войти через Instagram">
+                                            </a>
+                                            <a href="https://api.twitter.com/oauth/authorize?">
+                                                <img width="32" height="32" class="" src="/img/auth_social/svg/twitter.svg" alt="Twitter" title="Войти через Twitter">
+                                            </a>
+                                            <a href="https://oauth.yandex.ru/authorize?response_type=code&client_id=69bfd6e638dc4540ba8dc8aff79448c0&display=popup">
+                                                <img width="32" height="32" class="" src="/img/auth_social/svg/yandex.svg" alt="Yandex" title="Войти через Яндекс">
+                                            </a>
+                                            <a href="https://connect.mail.ru/oauth/authorize?client_id=749752&response_type=code&redirect_uri=http%3A%2F%2Fwww.ipweb.ru%2Flogin.php%3Ftype%3Dmailru">
+                                                <img width="32" height="32" class="" src="/img/auth_social/svg/mailru.svg" alt="Mail.ru" title="Войти через Mail.ru">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </span>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="main_content">
+            <div class="">
+
+            </div>
+            <div class="">
+
+            </div>
+            <div class="paralax_block">
+
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
