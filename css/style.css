@@ -1,7 +1,75 @@
 body {
-    background: url("../images/money.jpg") repeat;
+    background: url("../images/2.jpg") repeat;
+    font-family: Arial,sans-serif;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 14px;
 }
 .container {
     max-width: 1060px;
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h4{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+#upbutton {
+    background: url("../images/up3.png") no-repeat top left;
+    width: 74px;
+    height: 94px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
+
+#main-content {
+    margin-bottom: 50px;
+}
+
+#fon_video {
+    position: relative;
+}
+.fon_video_block {
+}
+.fon_video_block_item p{
+    color: #fff;
+}
+.fon_video_block_item {
+    padding-top: 15px;
+}
+
+
+
+footer {
+    position: absolute;
+    z-index: 0;
+    /*bottom: 0;*/
+    left: 0;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #446e9b none repeat scroll 0 0;
+}
+footer .container {
+     background: #446e9b none repeat scroll 0 0;
+}
+footer a {
+    color: #fff;
+}
+footer img {
     background-color: #fff;
 }

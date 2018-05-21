@@ -5,16 +5,19 @@
     <title>testDIRECTsoft</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="plagins/jquery.mb.YTPlayer-master/js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
+            <div id="upbutton"></div>
             <div class="container">
                 <div class="top_menu">
                     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -89,19 +92,196 @@
         </header>
 
         <div class="main_content">
-            <div class="">
-
+            <div class="price_for_site">
+                <div class="container">
+                    <div class="row">
+                        <h1>Цены на раскрутку сайта</h1>
+                        <div class="pricing-table">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="pricing-table">
+                                    <div class="pricing-header">
+                                        <p class="pricing-title">Посещения сайта</p>
+                                        <p class="pricing-rate"><span>от</span> 99 <span>рублей</span></p>
+                                        <p class="pricing-desc">за 1 000 посетителей</p>
+                                        <a data-toggle="modal" href="#fast-register" class="btn btn-custom">Зарегистрироваться</a>
+                                    </div>
+                                    <div class="pricing-list">
+                                        <ul>
+                                            <li><i class="fa fa-fw fa-mouse-pointer"></i>До <span>6</span>  дополнительных кликов по ссылкам</li>
+                                            <li><i class="fa fa-fw fa-dollar"></i>Каждый дополнительный клик — <span>49</span> рублей за 1000</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="pricing-table">
+                                    <div class="pricing-header">
+                                        <p class="pricing-title">Рассылка писем</p>
+                                        <p class="pricing-rate"><span>от</span> 130 <span>рублей</span></p>
+                                        <p class="pricing-desc">за 1 000 писем</p>
+                                        <a data-toggle="modal" href="#fast-register" class="btn btn-custom">Зарегистрироваться</a>
+                                    </div>
+                                    <div class="pricing-list">
+                                        <ul>
+                                            <li><i class="fa fa-fw fa-check-circle"></i>Никакого <span>спама</span></li>
+                                            <li><i class="fa fa-fw fa-dollar"></i>За переходы по ссылке — еще <span>20</span> рублей</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="">
-
+            <div class="container">
+                <div id="fon_video" class="player" data-property="{
+                                                      videoURL:'XL_3eYx3OVE',
+                                                      containment: '.overlay',
+                                                      autoPlay:true,
+                                                      mute:true,
+                                                      startAt:0,
+                                                      opacity:1,
+                                                      showControls:false
+                                                    }">
+                    <div class="overlay">
+                        <div class="row">
+                            <div class="fon_video_block">
+                                <div class="fon_video_block_item col-offset-3 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+                                    <h4>Наш подход</h4>
+                                    <p>Лучшие специалисты города профессионально занимаются раскруткой в социальных сетях.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-hrefs">
+                <div class="container">
+                    <h2>Цены на раскрутку в социальных сетях</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку ВКонтакте" data-toggle="collapse" href="#">
+                                <h3>Раскрутка ВКонтакте</h3>
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку на YouTube" data-toggle="collapse" href="#">
+                                <h3>Раскрутка на YouTube</h3>
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку в Инстаграме" data-toggle="collapse" href="#">
+                                <h3>Раскрутка в Инстаграме</h3>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку в Твиттере" data-toggle="collapse" href="#">
+                                <h3>Раскрутка в Твиттере</h3>
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку в в Facebook" data-toggle="collapse" href="#">
+                                <h3>Раскрутка в Facebook</h3>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку в Google+" data-toggle="collapse" href="#">
+                                <h3>Раскрутка в Google+</h3>
+                                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <a title="Цены на раскрутку в Одноклассниках" data-toggle="collapse" href="#">
+                                <h3>Раскрутка в Одноклассниках</h3>
+                                <i class="fa fa-odnoklassniki-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="paralax_block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h4>Подробнее о формировании цен на раскрутку и рассылки</h4>
+                            <p>На IPweb.ru вы можете заказать либо <strong>трафик на сайт</strong>, либо рекламную
+                                <strong>почтовую рассылку</strong>. Если вы закажете привлечение посетителей, то цена
+                                будет зависеть от количества посещений и количества дополнительных кликов после перехода
+                                на сайт. Если вы закажете рассылку рекламных писем, то на цену будет влиять число
+                                подписчиков и наличие   переходов по ссылке из письма. В отличие от большинства способов
+                                раскрутки, <a href="#">дешевая раскрутка</a> через IPweb не ударит
+                                по кошельку даже в том случае, если вы раскручиваете свой сайт из личного бюджета. Кроме
+                                того, мы оставляем возможность воспользоваться нашими услугами
+                                <a href="#">бесплатно</a>. Стоимость можно рассчитывать
+                                по такой формуле:</p>
+                            <blockquote>
+                                <p class="formula">цена за 1 000 посещений <span>=</span> 99 рублей
+                                <span>+</span> кол-во доп. кликов <span>х</span> 49 рублей</p>
+                            </blockquote>
+                            <p><strong>Несколько примеров цен на наши пакеты услуг:</strong></p>
+                            <ul class="benefits">
+                                <li>За <b>1 000</b> посетителей на сайт — <b>99</b> рублей</li>
+                                <li>За <b>1 000</b> посетителей, каждый из которых сделает <b>1</b> клик — 99 р. + 49 р. = <b>148</b> рублей</li>
+                                <li>За <b>1 000</b> посетителей, каждый из которых сделает <b>2</b> клика на вашем сайте — 99 р. + 2 х 49 р. = <b>197</b> рублей</li>
+                                <li>За <b>1 000</b> посетителей, которые перейдут по <b>2</b> ссылкам на вашем сайте и один раз кликнут по рекламе — 99 р. + 3 х 49 р. = <b>246</b> рублей</li>
+                                <li>За <b>1 000</b> рекламных писем — <b>130</b> рублей</li>
+                                <li>За <b>1 000</b> рекламных писем с гарантированным переходом на сайт — <b>150</b> рублей</li>
+                            </ul>
+                            <p class="text-muted"><small>Цена за 1 000 посещений указана для удобства подсчетов. Вы можете заказывать любое количество посещений и писем, которое сочтете необходимым.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container">
+
+            </div>
+
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h5>Привлечение посетителей на сайт</h5>
+                            <p>Цена <b>1000</b> посещений составляет <b>99 рублей</b>. Если вы хотите заказать отличное от этой цифры количество посетителей, то цена наших услуг будет изменяться пропорционально. Таким образом, цена за 5 000 посещений составит 495 рублей, а за 500 посещений - 49,5 рублей. Вторая составляющая цены раскрутки с привлечением посетителей на сайт — это количество кликов, которое пользователь должен сделать на вашем сайте (или на сайте, на который он перейдет с вашего). Цена за 1 клик, который сделает каждый пользователь из тысячи (при условии, что вы заказали тысячу посещений), составит <b>49 рублей</b>. Эта сумма добавится к стоимости оплаты посещений. Таким образом, если вы заказали 1000 посетителей, каждый из которых должен сделать по одному клику, то стоимость услуги составит 148 рублей. Вы можете увеличивать количество кликов, которое должен сделать каждый посетитель, вплоть до <b>6</b>. Каждый дополнительный клик будет стоить еще 49 рублей за 1000 посетителей. Максимальная цена за 1000 посетителей — <b>393 рубля</b>. Если клики по рекламе для вас наиболее интересны, то советуем рассмотреть кампанию "<a href="/wiki/kliki_po_reklame_i_banneram">Клики по рекламе и баннерам</a>".</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h5>Рассылка писем</h5>
+                            <p>Помимо привлечения посетителей на сайт, вы можете заказать у нас <strong>легальную почтовую рассылку</strong>. Мы разошлем письмо с вашим предложением, акцией или иной информацией большому количеству пользователей, каждый из которых должен будет ознакомиться с его содержанием и перейти по ссылке (если вы выбрали соответствующую опцию). Это ни в коем случае не спам. Рассылка производится среди пользователей нашего сервиса, которые зарабатывают на том, что читают рекламные письма. Рекламная рассылка — это очень эффективный инструмент для продвижения различных акций, мероприятий и предложений. Пользователи должны провести некоторое время за чтением письма, и некоторые из них могут заинтересоваться вашим предложением. Цена рассылки составляет <b>130 рублей</b> за <b>1000</b> писем. Если вы хотите, чтобы пользователи переходили по ссылке из вашего письма, то закажите рассылку с гарантированным переходом на сайт. Ее цена составит <b>150 рублей</b> за 1000 рекламных писем. Как и в предыдущем случае, для иного количества писем цена рассчитывается исходя из указанных соотношений.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <footer>
-
+            <div class="container">
+                <div class="row">
+                    <div class="webm col-md-4 col-sm-4 col-xs-4">
+                        <a href="#">
+                            <img src="images/88x31_wm_v_blue_on_transparent_ru.png" alt="webmoney">
+                        </a>
+                    </div>
+                    <div class="copy col-md-4 col-sm-4 col-xs-4">
+                        <span class="copy"><a href="/">IPweb.ru</a> © 2004 - 2018</span>
+                    </div>
+                    <div class="sitemap col-md-4 col-sm-4 col-xs-4">
+                        <a href="#">
+                            Карта сайта
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
