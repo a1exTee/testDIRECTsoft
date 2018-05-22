@@ -1,5 +1,5 @@
 body {
-    background: url("../images/2.jpg") repeat;
+    /*background: url("../images/2.jpg") repeat;*/
     font-family: Arial,sans-serif;
     padding: 0 !important;
     margin: 0 !important;
@@ -7,20 +7,43 @@ body {
 }
 .container {
     max-width: 1060px;
-    background-color: #fff;
 }
 
 ul {
     list-style-type: none;
 }
 
+a:hover, a:active {
+    text-decoration: none;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 35px;
+}
+
+h3 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 h4{
-    color: #fff;
     font-size: 30px;
     text-transform: uppercase;
     line-height: 1.4;
     letter-spacing: 2px;
     margin-bottom: 14px;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
 }
 
 #upbutton {
@@ -39,18 +62,152 @@ h4{
     margin-bottom: 50px;
 }
 
+.price_for_site, .social-hrefs {
+    padding: 20px 0px;
+}
+.pricing .pricing-table .pricing-header {
+    position: relative;
+    background: #446e9b;
+    padding: 22px 22px;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.pricing .pricing-table .pricing-list {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+}
+.pricing .pricing-list ul {
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+}
+.pricing .pricing-list ul li {
+    list-style: none;
+    border-bottom: 1px solid #EAECEB;
+    color: #676e74;
+    font-size: 16px;
+    line-height: 42px;
+}
+.pricing .pricing-list ul li i {
+    margin-right: 12px;
+    color: #bdc3c7;
+}
+.pricing .pricing-table .pricing-header .pricing-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+}
+.pricing .pricing-table .pricing-header .pricing-rate {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.pricing .pricing-table .pricing-header .pricing-desc {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: -21px;
+}
+.pricing .pricing-table .pricing-header .pricing-rate span {
+    font-size: 16px;
+    color: #bdc3c7;
+    text-transform: uppercase;
+}
+.btn-custom {
+    color: #bdc3c7;
+    font-size: 18px;
+    border: 1px solid #bdc3c7;
+}
+
+.reg {
+    display: block;
+    text-align: center;
+}
+.reg a {
+    margin: 10px 0px;
+}
+
 #fon_video {
     position: relative;
 }
-.fon_video_block {
+.overlay {
+    height: 500px;
 }
 .fon_video_block_item p{
     color: #fff;
 }
 .fon_video_block_item {
     padding-top: 15px;
+    margin-top: 30px;
+}
+.fon_video_block_item h4 {
+    color: #fff;
 }
 
+.social-hrefs {
+    text-align: center;
+}
+.social-hrefs a {
+    position: relative;
+}
+
+.social-hrefs a i {
+    margin: 10px;
+    font-size: 100px;
+}
+
+.social-hrefs a i.fa:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: #446e9b;
+}
+.social-hrefs a:hover h3 {
+    color: #446e9b;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.paralax_block blockquote {
+    padding: 10px;
+    text-align: center;
+}
+.paralax_block .formula {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    background: #f6f6f6;
+    display: inline-block;
+}
+.paralax_block .paralax {
+    background-image: url("../images/emailmarketing.jpg");
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0;
+    position:relative;
+    min-height:660px;
+}
+.text-muted small {
+    color: #000;
+}
 
 
 footer {
